@@ -97,6 +97,11 @@ header {
         
      }
  }
+ @media(max-width:500px){
+     header{
+         width:100%;
+        }
+ }
 header nav {
     margin-top: 40px; 
     width: 610px;
@@ -123,6 +128,8 @@ header nav a {
     header nav a{
         padding:10px 0;
         margin-left: 27%;
+      
+        
     }
 }
 header nav a:hover {
@@ -152,6 +159,13 @@ header .logo {
 
     }
 }
+@media (max-width:500px){
+    .cta {
+     padding-right: 0px;
+        width:100%;
+        margin-left: 10%;
+    } 
+}
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
@@ -167,6 +181,7 @@ header .logo {
     margin-right: 31%;
   }  
 }
+
 .cta .cta-text button {
     border: 1px double black;
     font-size: 16px;
@@ -192,13 +207,23 @@ header .logo {
    font-size: 16px;
    line-height: 18px;
 }
-
+@media(max-width:500px){
+    .main-content{
+        width:500px;
+    }
+}
 .main-content .top-content {
     display: flex;
 }
 @media(max-width:800px){
     .main-content .top-content .text-content{
         padding:20px;
+    }
+}
+@media(max-width:500px){
+    .main-content .top-content {
+        flex-direction: column;
+        width:90%;
     }
 }
 .main-content .middle-img {
@@ -215,7 +240,12 @@ header .logo {
 .main-content .bottom-content {
     display: flex;
 }
-
+@media(max-width:500px){
+    .main-content .bottom-content{
+    flex-direction: column;
+    width:90%;
+    }  
+}
 .main-content .bottom-content p {
     padding-right: 20px;
 }
