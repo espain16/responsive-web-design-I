@@ -1,3 +1,196 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+body{
+	width: 880px;
+	margin:auto;
+}
+.container{
+   width:880px;
+   margin:auto; 
+}
+@media(max-width:800px){
+    .container{
+        width: 800px;
+        background:purple;
+    }
+}
+@media(max-width:500px){
+    .container{
+        width:500px;
+        background: teal;
+    }
+}
+header{
+    width:100%;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+}
+    @media(max-width:800px){
+        header{
+            flex-direction: column-reverse;
+            align-content: center;
+        }
+    }
+header nav{
+	margin-top: 16px;
+	 width: 80%;
+}
+    @media(max-width:800px){
+        header nav{
+            width: 83%;
+            margin-left:55px;
+        }
+    }
+
+header nav a{
+color:gray;
+text-decoration: none;
+padding: 10px;
+margin:0 18px;
+}
+@media(max-width:800px){
+.logo img{
+  width:30%;
+  
+}
+@media(max-width:800px){
+.circle img{
+    display: none;
+}
+}
+/*Mixins*/
+
+.second-header .top{
+	display: flex;
+	flex-direction: row;
+	width: 49.8%;
+	vertical-align: top;
+	padding: 20px;
+
+}
+
+.second-header .top h1{
+	font-size: 73px;
+	margin-top: 50px;
+	text-align: center;
+
+}
+.second-header button{
+	
+	margin-left: 60px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 20px;
+	vertical-align:top;
+	padding: 10px 42px;
+
+}
+
+.top-container{
+	display:flex;
+	border-top: 1px solid black;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.top-container h2{
+	margin-top: 40px;
+}
+
+.top-container .top-bottom {
+flex-direction: column;
+
+}
+ .second-header .top img{
+margin-left: 171px;
+}
+    
+
+.spv{
+	display:flex;
+	border-bottom: 1px solid black;
+	
+}
+.spv .bottom-content{
+	margin-top:20px;
+	flex-direction: column;
+	padding: 10px;
+	width: 32%;
+	margin-bottom: 40px;
+}
+footer{
+	margin-top: 40px;
+}
+footer address p{
+margin: 20px 0;
+}
+h6{
+	text-align: center;
+}
 
 
