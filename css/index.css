@@ -107,23 +107,23 @@ header nav{
             margin-left:55px;
         }
     }
-
+    @media(max-width:800px){
+        header img{
+          width:30%;
+          margin-left: 35%;
+        }
+        @media(max-width:800px){
+          .top img{
+            display: none;
+        }
+        }
 header nav a{
 color:gray;
 text-decoration: none;
 padding: 10px;
 margin:0 18px;
 }
-@media(max-width:800px){
-.logo img{
-  width:30%;
-  
-}
-@media(max-width:800px){
-.circle img{
-    display: none;
-}
-}
+
 /*Mixins*/
 
 .second-header .top{
@@ -194,3 +194,4 @@ h6{
 }
 
 
+}
