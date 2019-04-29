@@ -79,6 +79,12 @@ h1, h2, h3, h4, h5 {
          background-color: purple;
      }
  }
+ @media(max-width:500px){
+     .container{
+         width: 500px;
+         background-color:teal;
+     }
+ }
 /* Header Styles */
 
 header {
@@ -102,12 +108,23 @@ header nav {
         margin-left:11%;
     }
 }
+@media(max-width:500px){
+    header nav{
+        flex-direction: column;
+       
+    }
+}
 
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
 }
-
+@media(max-width:500px) {
+    header nav a{
+        padding:10px 0;
+        margin-left: 27%;
+    }
+}
 header nav a:hover {
     text-decoration: underline;
     color: black;
@@ -181,7 +198,7 @@ header .logo {
 }
 @media(max-width:800px){
     .main-content .top-content .text-content{
-        padding:10px;
+        padding:20px;
     }
 }
 .main-content .middle-img {
@@ -191,6 +208,7 @@ header .logo {
 @media(max-width:800px){
     .main-content .middle-img{
         width:100%;
+        padding:15px;
     }
 }
 
@@ -201,13 +219,23 @@ header .logo {
 .main-content .bottom-content p {
     padding-right: 20px;
 }
-
+@media(max-width:800px){
+    .text-content{
+        padding:20px;
+    }
+}
 /* Contact Styles */
 
 .contact p {
     margin: 15px 0;
 }
+@media(max-width:800px){
+    .contact{
+        padding: 20px;
+    
+    }
 
+}
 /* Footer Styles */
 
 footer {
